@@ -8,7 +8,6 @@ variable "resource_group_name" {
 }
 
 variable "vpc_name" {
-    default = "test"
 }
 
 output "schematics_workspace_id" {
