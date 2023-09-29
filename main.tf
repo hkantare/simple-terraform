@@ -1,6 +1,6 @@
 
 data "ibm_resource_group" "group" {
-  name = "${var.resource_group_name}"
+  name = "Default"
 }
 
 /*resource "ibm_cd_toolchain" "cd_toolchain_instance" {
