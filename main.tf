@@ -3,9 +3,9 @@ data "ibm_resource_group" "group" {
   name = "Default"
 }
 
-data "ibm_schematics_workspace" "schematics_workspace" {
+/*data "ibm_schematics_workspace" "schematics_workspace" {
     workspace_id = var.workspace_id
-}
+}*/
 
 /*resource "ibm_cd_toolchain" "cd_toolchain_instance" {
   description = "A sample toolchain to test the API"
