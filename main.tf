@@ -20,12 +20,12 @@ resource "ibm_is_vpc" "vpc" {
 }
 
 
-/*resource "ibm_is_vpc" "vpc1" {
+resource "ibm_is_vpc" "vpc1" {
   name           = "${var.vpc_name}1"
   resource_group = "${data.ibm_resource_group.group.id}"
   //default_security_group_name = "unseated-spoilage-surpass-prompt"
   tags = ["tag1","tag2"]
-}*/
+}
 
 /*resource "ibm_resource_group" "grp" {
   name           = "mygrp-today"
