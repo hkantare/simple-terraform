@@ -19,6 +19,11 @@ resource "ibm_is_vpc" "vpc" {
   tags = ["tag1","tag2"]
 }
 
+import {
+  to = ibm_is_vpc.vpc
+  id = "r006-41401283-4ff3-456a-9b9b-e12b21d40b3a"
+}
+
 
 resource "ibm_is_vpc" "vpc1" {
   name           = "${var.vpc_name}1"
