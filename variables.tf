@@ -10,6 +10,11 @@ variable "resource_group_name" {
 variable "vpc_name" {
 }
 
+variable "description" {
+default = "__NULL__"
+}
+
+
 variable "workspace_id" {
  default     = "us-south.workspace.globalcatalog-collection.8188e2c7"
 }
