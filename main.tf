@@ -28,7 +28,7 @@ import {
 resource "ibm_is_vpc" "vpc1" {
   name           = "${var.vpc_name}1"
   resource_group = "${data.ibm_resource_group.group.id}"
-  //default_security_group_name = "unseated-spoilage-surpass-prompt"
+  default_security_group_name = var.default_security_group_name 
   tags = ["tag1","tag2"]
 }
 
