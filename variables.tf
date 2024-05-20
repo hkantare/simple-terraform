@@ -11,7 +11,7 @@ variable "vpc_name" {
 }
 
 variable "default_security_group_name" {
-default = "__NULL__"
+default = null
 }
 
 
