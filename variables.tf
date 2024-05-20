@@ -10,7 +10,7 @@ variable "resource_group_name" {
 variable "vpc_name" {
 }
 
-variable "description" {
+variable "default_security_group_name" {
 default = "__NULL__"
 }
 
