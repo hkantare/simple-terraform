@@ -11,7 +11,7 @@ variable "vpc_name" {
 }
 
 variable "default_security_group_name" {
-default = null
+default = "test"
 }
 
 
