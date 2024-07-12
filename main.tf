@@ -67,3 +67,14 @@ data "ibm_is_subnet" "subnet" {
   name = "subnet-2fb2" 
   depends_on = [data.ibm_is_vpc.vpc[0]]
 }*/
+
+resource "ibm_resource_key" "resourceKey" {
+  name                 = "test"
+  resource_instance_id = "crn:v1:bluemix:public:cloud-object-storage:global:a/ab3ed67929c2a81285fbb5f9eb22800a:1802f308-f656-4c8f-8a3a-b732946eaf02::"
+  role = "NONE"
+  //User can increase timeouts
+  timeouts {
+    create = "15m"
+    delete = "15m"
+  }
+}
