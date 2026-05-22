@@ -8,7 +8,7 @@ variable "resource_group_name" {
 }*/
 
 variable "vpc_name" {
-default = "test"
+default = "ref://secrets-manager.eu-gb.Default.Secrets-Manager-POC/Default/gannayak_secrets_gp?key=git_token"
 }
 
 variable "default_security_group_name" {
