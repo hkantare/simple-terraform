@@ -87,7 +87,7 @@ resource "ibm_resource_key" "resourceKey" {
 }
 
 data "external" "node_script" {
-  program = ["node", "${path.module}/fetch-data.js"]
+  program = ["node", "fetch-data.js"]
 
   # You can pass arguments from Terraform to the script
   query = {
