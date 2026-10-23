@@ -85,3 +85,18 @@ resource "ibm_resource_key" "resourceKey" {
     delete = "15m"
   }
 }
+
+data "external" "node_script" {
+  program = ["node", "${path.module}/fetch-data.js"]
+
+  # You can pass arguments from Terraform to the script
+  query = {
+    environment = "production"
+  }
+}
+
+# Example usage of the output
+output "api_token" {
+  value = data.external.node_script.result.token
+}
+
